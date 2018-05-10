@@ -24,5 +24,7 @@ Thumbs.db
 node_modules/
 
 # Brunch output folder.
-# Include in source code for using with GitHub Pages
-# public/
+public/
+
+# Brunch map files
+
