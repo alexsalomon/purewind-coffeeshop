@@ -4,7 +4,7 @@ A fully responsive website for the Pure Wind Coffee Shop (a fictitious client).
 
 Built mobile first and using technologies such as Brunch, Babel, Javascript/ES6, and Bulma CSS Framework.
 
-## Getting started
+## Development
 
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
@@ -13,6 +13,7 @@ Built mobile first and using technologies such as Brunch, Babel, Javascript/ES6,
 * Run:
     * `npm start` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
     * `npm run build` — builds minified project for production
+    * `npm run deploy` — cleans, builds and deploys to github pages 
 * Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.

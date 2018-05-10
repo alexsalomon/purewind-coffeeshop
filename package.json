@@ -7,7 +7,10 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "clean": "rm public/*",
+    "build": "brunch build --production",
+    "predeploy": "npm run clean; npm run build;",
+    "deploy": "./scripts/deploy.sh"
   },
   "dependencies": {},
   "devDependencies": {
