@@ -19,6 +19,8 @@
     "babel-preset-latest": "^6",
     "brunch": "^2",
     "clean-css-brunch": "^2",
+    "stylint-brunch": "^1.2.1",
+    "stylus-brunch": "^2.10.0",
     "uglify-js-brunch": "^2"
   }
 }
