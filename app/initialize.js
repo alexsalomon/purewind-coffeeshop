@@ -1,5 +1,5 @@
 
-"use strict";
+import 'bulma/css/bulma.css'
 
 document.addEventListener('DOMContentLoaded', () => {
   // do your setup here
