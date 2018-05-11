@@ -2,10 +2,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pure Wind Coffee</title>
+  <title>{% block pageTitle %}{{ pageTitle }}{% endblock %}</title>
   <link rel="stylesheet" href="styles/app.css">
 </head>
-<body>
+<body class="{% block bodyClass %}{% endblock %}">
 
   {% include "parts/_header.html" %}
 

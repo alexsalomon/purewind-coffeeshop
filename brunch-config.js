@@ -18,6 +18,9 @@ exports.config = {
     },
     plugins: {
         babel: { presets: ['latest'] },
+        nunjucks: {
+            pageTitle: 'My Website'
+        },
         eslint: {
             config: {
                 rules: {

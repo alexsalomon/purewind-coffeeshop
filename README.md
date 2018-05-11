@@ -2,8 +2,8 @@
 
 A fully responsive website for the Pure Wind Coffee Shop (a fictitious client).
 
-Built mobile first and using technologies such as Brunch.io, Babel, Javascript/ES6, ESLint, Bulma (a CSS framework) 
-and Stylus.
+Built mobile first and using technologies such as Brunch.io, Babel, Javascript/ES6, ESLint, Bulma (a CSS framework), 
+Stylus, and Nunjucks.
 
 Visit http://alexsalomon.me/purewind-coffeeshop/ to see it live.
 

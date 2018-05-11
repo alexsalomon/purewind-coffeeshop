@@ -1,6 +1,14 @@
 
 {% extends "layouts/_base.html" %}
 
+<!------------------- Layout Variables ------------------------->
+<!-- pageTitle is defined in brunch-config.js -->
+{% block pageTitle %}{{ pageTitle }} - Home{% endblock %}
+
+<!-- REQUIRED: to fire scripts for this page -->
+{% block bodyClass %}home{% endblock %}
+<!-------------------------------------------------------------->
+
 {% block main %}
   <section class="main">
     <h1>Hello World!</h1>
