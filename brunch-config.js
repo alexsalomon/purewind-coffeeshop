@@ -4,13 +4,23 @@ exports.config = {
   files: {
       javascripts: {
           joinTo: {
-              'vendor.js': /^(?!app)/, // Files that are not in `app` dir.
-              'app.js': /^app/
+              'js/vendor.js': /^(?!app)/, // Files that are not in `app` dir.
+              'js/app.js': /^app\/js/
           },
       },
-      stylesheets: {joinTo: 'app.css'},
+      stylesheets: {joinTo: 'styles/app.css'},
   },
   plugins: {
       babel: {presets: ['latest']},
+      eslint: {
+          config: {
+              rules: {
+                  semi: 2,
+              },
+          },
+          pattern: /^src\/.*\.jsx?$/,
+          warnOnly: false,
+          formatter: 'table',
+      },
   },
 };

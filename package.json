@@ -7,7 +7,7 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server",
-    "clean": "rm public/*",
+    "clean": "rm -rf public/*",
     "build": "brunch build --production",
     "predeploy": "npm run clean; npm run build;",
     "deploy": "./scripts/deploy.sh"
@@ -21,6 +21,7 @@
     "babel-preset-latest": "^6",
     "brunch": "^2",
     "clean-css-brunch": "^2",
+    "eslint-brunch": "^3.12.0",
     "stylint-brunch": "^1.2.1",
     "stylus-brunch": "^2.10.0",
     "uglify-js-brunch": "^2"
