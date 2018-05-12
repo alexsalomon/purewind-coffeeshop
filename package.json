@@ -8,6 +8,7 @@
   "scripts": {
     "start": "brunch watch --server",
     "clean": "rm -rf public/*",
+    "prebuild": "npm run clean",
     "build": "brunch build --production",
     "predeploy": "npm run clean; npm run build;",
     "deploy": "./scripts/deploy.sh"
