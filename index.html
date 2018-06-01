@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,25 +9,98 @@
 <body class="home">
 
   
-<nav class="navigation"></nav>
-  <h1>header test</h1>
+<nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+      <img class="navbar-burguer__icon" src="icons/icon-bars.svg">
+    </a>
+  </div>
 </nav>
 
 
   
-  <section class="main">
-    <h1>Hello World!</h1>
+  <section class="branding">
+    <img class="branding__logo" src="icons/logo.svg" alt="The Pure Wind Coffee Shop">
   </section>
 
+  <section class="highlights">
+    <div class="highlights-place">
+      <img class="highlights__image highlights__image--place" src="images/home-mobile-01.png">
+      <h2 class="highlights__title highlights__title--place">Best place to relax and enjoy!</h2>
+    </div>
 
-  
-<footer class="footer">
-  <h1>footer test</h1>
+    <div class="highlights-beverage-1">
+      <img class="highlights__image highlights__image--beverage-1" src="images/home-mobile-04.png">
+      <h2 class="highlights__title highlights__title--beverage-1">Tropical fruit smoothie.</h2>
+    </div>
+
+    <div class="highlights-plate-1">
+      <img class="highlights__image highlights__image--plate-1" src="images/home-mobile-05.png">
+      <h2 class="highlights__title highlights__title--plate-1">Avocado green hummus mix plate.</h2>
+    </div>
+
+    <div class="highlights-beverage-2">
+      <img class="highlights__image highlights__image--beverage-2" src="images/home-mobile-06.png">
+      <h2 class="highlights__title highlights__title--beverage-2">Refreshing.</h2>
+    </div>
+
+    <div class="highlights-plate-2">
+      <img class="highlights__image highlights__image--plate-2" src="images/home-mobile-07.png">
+      <h2 class="highlights__title highlights__title--plate-2">Vegan.</h2>
+    </div>
+
+    <div class="highlights-appetizer">
+      <img class="highlights__image highlights__image--appetizer" src="images/home-mobile-08.png">
+      <h2 class="highlights__title highlights__title--appetizer">Delicious.</h2>
+    </div>
+  </section>
+
+  <section class="restaurant-info">
+    <div class="restaurant-info__info-section restaurant-info__info-section--opening-times">
+      <h1 class="restaurant-info__title">Opening Times</h1>
+      <p class="restaurant-info__text">
+        <span>Monday to Friday: <strong>10</strong> am - <strong>21</strong> pm</span>
+        <br/>
+        <span>Saturday: <strong>11</strong> am - <strong>19</strong> pm</span>
+      </p>
+    </div>
+
+    <div class="restaurant-info__info-section restaurant-info__info-section--contact">
+      <h1 class="restaurant-info__title">Contact</h1>
+      <p class="restaurant-info__text">
+        <span>+351 223 456 593</span>
+        <br/>
+        <span>info@purewindcoffee.com</span>
+      </p>
+    </div>
+
+    <div class="restaurant-info__info-section restaurant-info__info-section--address">
+      <h1 class="restaurant-info__title">Address</h1>
+      <p class="restaurant-info__text">
+        <span>Rua do Douro 1567</span>
+        <br/>
+        <span>4050-200 Porto Portugal</span>
+      </p>
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-image">
+    <img class="footer-image__image" src="images/home-mobile-09.png">
+  </div>
+  <div class="social media">
+    <img class="social-media__icon social-media__icon--facebook" src="icons/icon-facebook.svg">
+    <!--<img class="social-media__icon social-media__icon&#45;&#45;instagram" src="icons/icon-bars.svg">-->
+    <!--<img class="social-media__icon social-media__icon&#45;&#45;twitter" src="icons/icon-bars.svg">-->
+  </div>
 </footer>
 
 
+
+  
 
   <script src="js/vendor.js"></script>
   <script src="js/app.js"></script>
   <script>require('js/initialize');</script>
 </body>
+</html>
