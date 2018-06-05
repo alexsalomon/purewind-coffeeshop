@@ -7,4 +7,4 @@ git commit -m "Deploy to gh-pages from commit: $(git log '--format=format:%H' ma
 git push origin gh-pages
 cd ..
 
-echo "\n\nDeployed."
+printf "\n\nDeployed.\n"
