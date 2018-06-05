@@ -1,3 +1,4 @@
+$primary-color = #0085B3
 
 vendor(prop, args)
   -webkit-{prop} args
@@ -17,10 +18,20 @@ transform-origin()
 .is-transparent
   background-color: transparent
 
+.navbar-brand
+  position: relative
+  z-index: 2
+
+/****** Menu Icon ******/
 .navbar-burger
   display: flex
   align-items: center
   justify-content: center
+  background-color: $primary-color
+  opacity: 0.9
+
+.navbar-burger:hover
+  background-color: $primary-color
 
 .navbar-burger__icon
   width: 25px
@@ -37,7 +48,7 @@ transform-origin()
   position: absolute
   left: 0
   opacity: 1
-  background: black
+  background: white
   border-radius: 20px
   transform: rotate(0deg)
   transition: 0.25s ease-in-out
@@ -67,3 +78,43 @@ transform-origin()
   top: 17px
   left: 4px
   transform: rotate(-45deg)
+
+/****** Menu Overlay ******/
+.menu-overlay
+  height: 0
+  width: 100%
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  background-color: white
+  overflow-x: hidden // disable horizontal scroll
+  transition: 0.5s // 0.5 second transition effect to slide down
+
+.menu-overlay__content
+  width: 100%
+  text-align: center
+
+.menu-overlay__navigation-items
+  padding-top: 45px /* Avoid conflict with the close button */
+  background-color: $primary-color
+
+.menu-overlay__navigation-item
+  padding: 0.2em
+  text-decoration: none
+  font-size: 2em
+  color: white
+  display: block
+
+.menu-overlay__restaurant-info
+  color: $primary-color
+
+.menu-overlay__info-section
+  margin 1em 0
+
+.menu-overlay__restaurant-info__title
+  font-size: 2em
+
+.menu-overlay__restaurant-info__text
+  font-family: Corbel
+  font-size: 1.5em
