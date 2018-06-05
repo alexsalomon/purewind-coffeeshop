@@ -19,7 +19,7 @@ exports.config = {
     plugins: {
         babel: { presets: ['latest'] },
         nunjucks: {
-            pageTitle: 'My Website'
+            pageTitle: 'The Pure Wind Coffee'
         },
         eslint: {
             config: {
