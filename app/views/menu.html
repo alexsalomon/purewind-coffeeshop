@@ -1,0 +1,221 @@
+
+{% extends "layouts/_base.html" %}
+
+<!------------------- Layout Variables ------------------------->
+<!-- pageTitle is defined in brunch-config.js -->
+{% block pageTitle %}{{ pageTitle }} - Menu{% endblock %}
+
+<!-- REQUIRED: to fire scripts for this page -->
+{% block bodyClass %}menu{% endblock %}
+<!-------------------------------------------------------------->
+
+{% block main %}
+  <section class="menu">
+    <img class="menu__category-image menu__category-image--smoothies" src="images/menu/menu-mobile-01.png">
+
+    <!-- Smoothies -->
+    <h2 class="menu__category-title">Smoothies</h2>
+    <p class="menu__item">
+      <span class="menu__item--name">Peachy Oat Smoothie</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Banana Java</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Red Delicious Mix</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Orange Crush</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Endless Summer</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Blue-berry Lavender</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Raspberry Turmeric</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Chunky Monkey</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+
+    <!-- Coffee -->
+    <h2 class="menu__category-title">Coffee</h2>
+    <p class="menu__item">
+      <span class="menu__item--name">Espresso</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Red Americano</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Latte</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Macchiato</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Blue-Cappuccino</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Mocha</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+
+    <!-- Juice -->
+    <h2 class="menu__category-title">Juice</h2>
+    <p class="menu__item">
+      <span class="menu__item--name">Watermelon & Mint</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Aam Ras</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Ananas da Panna</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Lychee & Dill</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Very Berry Katta</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Grape Nectar</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Orange</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Lemonade</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Pineapple</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+
+    <img class="menu__category-image menu__category-image--brunch" src="images/menu/menu-mobile-02.png">
+
+    <!-- Brunch -->
+    <h2 class="menu__category-title">Brunch</h2>
+    <p class="menu__item">
+      <span class="menu__item--name">Cardamom-Vanilla Granola</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Butternut-Squash Kale Hash</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Pumpkin Dutch Baby with Pears</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Horseradish Potatoes</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Mini Smoked-Salmon Frittatas</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Maple-Cinnamon French Toast</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Granola Yogurt Parfait</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Almond Ciabatta French toast</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+
+    <!-- Sandwiches -->
+    <h2 class="menu__category-title">Sandwiches</h2>
+    <p class="menu__item">
+      <span class="menu__item--name">Bagel Toast</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Beirute</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">BLT</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Kebab</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Cuban Sandwich</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Barcos Jarra</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Toastie</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+
+    <!-- Salads -->
+    <h2 class="menu__category-title">Salads</h2>
+    <p class="menu__item">
+      <span class="menu__item--name">Banana Salad</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Cappon Magro</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Caesar Salad</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Vegan Dream</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Karedok</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Panzanella</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+    <p class="menu__item">
+      <span class="menu__item--name">Waldorf Salad</span>
+      <span class="menu__item--price">8.00€</span>
+    </p>
+
+  </section>
+
+  <section class="footer-image">
+    <img class="footer-image__image" src="images/menu/menu-mobile-03.png">
+  </section>
+{% endblock %}
