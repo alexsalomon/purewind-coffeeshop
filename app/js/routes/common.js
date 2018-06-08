@@ -9,6 +9,7 @@ export default {
             const menuIcon = document.querySelector('.navbar-burger__icon');
 
             document.documentElement.classList.toggle('noscroll');
+            document.querySelector('.main').classList.toggle('noscroll');
             menuIcon.classList.toggle('open');
 
             if(menuIcon.classList.contains('open')) {

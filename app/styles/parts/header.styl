@@ -89,6 +89,8 @@ transform-origin()
   top: 0
   background-color: white
   overflow-x: hidden // disable horizontal scroll
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch; // fix issue with iOS devices not using 'momentum' scrolling on overlay
   transition: 0.5s // 0.5 second transition effect to slide down
 
 .menu-overlay__content
