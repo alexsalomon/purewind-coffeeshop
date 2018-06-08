@@ -1,0 +1,37 @@
+
+{% extends "layouts/_base.html" %}
+
+<!------------------- Layout Variables ------------------------->
+<!-- pageTitle is defined in brunch-config.js -->
+{% block pageTitle %}{{ pageTitle }} - About{% endblock %}
+
+<!-- REQUIRED: to fire scripts for this page -->
+{% block bodyClass %}about{% endblock %}
+<!-------------------------------------------------------------->
+
+{% block main %}
+  {% include "parts/_logo.html" %}
+  <img class="logo-border-down" src="borders/white-border-bottom-down.svg">
+
+  <section class="about-restaurant">
+    <div class="about-content">
+      <p class="about-content__text">Pure Wind is a tropical styled coffeehouse that serves fresh, healthy and
+        delicious food. It is the perfect environment to hangout with friends, do your online work or simply chill
+        with a refreshing beverage.</p>
+      <p class="about-content__text about-content__text--no-margin-bottom">
+        Try our <a class="about-content__link is-white is-bold" href="menu.html#smoothies">tropical fruit smoothies</a>,
+        <a class="about-content__link is-white is-bold" href="menu.html#brunch">healthy mixed plates</a> and other
+        <a class="about-content__link is-white is-bold" href="menu.html#salads">vegan deliciousness</a>.
+      </p>
+      <img class="about-content__image about-content__image--1" src="images/about/about-mobile-01.png">
+
+      <p class="about-content__text about-content__text--no-margin-top">This is a website for a fictional coffeehouse
+        made by Alex Salomon (web developer) and Pedro Sarmento (web designer).</p>
+      <p class="about-content__text">Photography by Annie Spratt, Brooke Lark, Dominic Dreier, Jason Briscoe,
+        Katlyn Giberson, Kris Atomic, Laurent Perren, Fabio C. and Christine Siracusa.</p>
+      <p class="about-content__text">All photos are free to use under the Creative Commons Zero (CC0) license.</p>
+    </div>
+  </section>
+
+  <img class="logo-border-down" src="borders/white-border-bottom-up.svg">
+{% endblock %}
