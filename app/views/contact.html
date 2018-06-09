@@ -1,0 +1,61 @@
+
+{% extends "layouts/_base.html" %}
+
+<!------------------- Layout Variables ------------------------->
+<!-- pageTitle is defined in brunch-config.js -->
+{% block pageTitle %}{{ pageTitle }} - Contact{% endblock %}
+
+<!-- REQUIRED: to fire scripts for this page -->
+{% block bodyClass %}contact{% endblock %}
+<!-------------------------------------------------------------->
+
+{% block main %}
+  <section class="contact-map"></section>
+
+  <section class="contact-box">
+    <h1 class="contact-box__title">What's on your mind?</h1>
+    <form action="" class="contact-form">
+
+      <div class="field">
+        <label class="form-label">Name</label>
+        <div class="control has-icons-right">
+          <input class="input is-danger" type="text">
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This field cannot be empty</p>
+      </div>
+
+      <div class="field">
+        <label class="form-label">Email</label>
+        <div class="control has-icons-right">
+          <input class="input is-danger" type="email">
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">Invalid email address</p>
+      </div>
+
+      <div class="field">
+        <label class="form-label">Message</label>
+        <div class="control">
+          <textarea class="textarea is-danger"></textarea>
+        </div>
+        <p class="help is-danger">This field cannot be empty</p>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </section>
+
+  <img class="contact-box__border" src="borders/white-border-bottom-up.png">
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkPkBgemTv6F83HGw-uBKp4uUBH7uawgg&callback=initMap"></script>
+{% endblock %}
