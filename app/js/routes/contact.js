@@ -1,11 +1,23 @@
 
 export default {
     init() {
-        window.initMap = () => {
-            const uluru = {lat: 41.141098, lng: -8.617907};
-            const map = new google.maps.Map(document.querySelector('.contact-map'), {zoom: 16, center: uluru});
-            const marker = new google.maps.Marker({position: uluru, map: map});
-        }
+        $(".contact-form").submit((e) => {
+            e.preventDefault();
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: $(e.target).attr('action'),
+                data: $(e.target).serialize(),
+                success: function(response) {
+                    if(response.status == "success"){
+                        alert('Email sent successfully.');
+                    }else{
+                        alert('Oops, something went wrong. Please try again later.');
+                    }
+                }
+            });
+        });
     },
     finalize() {
         // JavaScript to be fired on the home pages, after init
