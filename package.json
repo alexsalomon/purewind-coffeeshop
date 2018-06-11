@@ -6,6 +6,7 @@
   "version": "0.0.1",
   "repository": "",
   "scripts": {
+    "prestart": "npm run clean",
     "start": "brunch watch --server",
     "clean": "rm -rf public/*",
     "prebuild": "npm run clean",
