@@ -13,10 +13,12 @@ exports.config = {
     npm: {
         enabled: true,
         globals: {
-            $: 'jquery'
+            $: 'jquery',
+            alertify: 'alertifyjs'
         },
         styles: {
-            'bulma': ['css/bulma.css']
+            'bulma': ['css/bulma.css'],
+            'alertifyjs': ['build/css/alertify.css']
         }
     },
     plugins: {
