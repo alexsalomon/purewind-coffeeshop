@@ -14,11 +14,13 @@ exports.config = {
         enabled: true,
         globals: {
             $: 'jquery',
-            alertify: 'alertifyjs'
+            alertify: 'alertifyjs',
+            parsley: 'parsleyjs'
         },
         styles: {
             'bulma': ['css/bulma.css'],
-            'alertifyjs': ['build/css/alertify.css']
+            'alertifyjs': ['build/css/alertify.css'],
+            'parsleyjs': ['src/parsley.css']
         }
     },
     plugins: {

@@ -1,6 +1,15 @@
 
 export default {
     init() {
+        $('.contact-form').parsley();
+
+        window.Parsley.on('field:error', function() {
+            this.$element.closest('.control').addClass('error');
+        });
+        window.Parsley.on('field:success', function() {
+            this.$element.closest('.control').removeClass('error');
+        });
+
         $(".contact-form").submit((e) => {
             e.preventDefault();
             alertify.set('notifier','position', 'top-center');
@@ -9,7 +18,7 @@ export default {
                 type: "POST",
                 dataType: "json",
                 url: $(e.target).attr('action'),
-                // data: $(e.target).serialize(),
+                data: $(e.target).serialize(),
                 success: function(response) {
                     if(response.status == "success"){
                         document.querySelector('.contact-form').reset();
