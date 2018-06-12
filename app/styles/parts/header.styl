@@ -98,6 +98,8 @@ transform-origin()
   text-align: center
 
 .menu-overlay__navigation-items
+  position: relative
+  z-index: 2
   padding-top: 52px /* Avoid conflict with the close button */
   margin-bottom: -1px /* Seamlessly connect to the border image */
   background-color: $primary-color
@@ -108,6 +110,10 @@ transform-origin()
   font-size: 2em
   color: white
   display: block
+
+.menu-overlay__navigation-items__border
+  margin-top: -2em
+  z-index: 1
 
 .menu-overlay__restaurant-info
   margin-bottom: 1em
