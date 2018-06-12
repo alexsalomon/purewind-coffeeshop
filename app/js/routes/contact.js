@@ -1,7 +1,10 @@
 
 export default {
     init() {
-        $('.contact-form').parsley();
+        $('.contact-form').parsley({
+            requiredMessage: "Oops, this field cannot be empty",
+            typeMessage: "Oops, this seems to be an invalid email address"
+        });
 
         window.Parsley.on('field:error', function() {
             this.$element.closest('.control').addClass('error');
