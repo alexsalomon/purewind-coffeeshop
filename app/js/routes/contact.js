@@ -23,8 +23,7 @@ export default {
                 url: $(e.target).attr('action'),
                 data: $(e.target).serialize(),
                 success: function(response) {
-                    if(response.status == "success"){
-                        document.querySelector('.contact-form').reset();
+                    if(response.status == "success") {
                         alertify.success('Email sent successfully.');
                     }else{
                         alertify.error('Oops, something went wrong. Please try again later.');
@@ -32,6 +31,10 @@ export default {
                 },
                 error: function () {
                     alertify.error('Oops, something went wrong. Please try again later.');
+                },
+                complete: function () {
+                    document.querySelector('.contact-form').reset();
+                    $('.contact-form').parsley().reset();
                 }
             });
         });

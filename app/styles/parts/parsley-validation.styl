@@ -1,0 +1,20 @@
+$validation-success-background-color = #c7f4ec
+$validation-success-border-color = #5CE0C7
+$validation-success-typography-color = #087F74
+$validation-error-background-color = #f2dede
+$validation-error-border-color = #eed3d7
+$validation-error-typography-color = #b94a48
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success
+  color: $validation-success-typography-color;
+  background-color: $validation-success-background-color;
+  border: 1px solid $validation-success-border-color;
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error
+  color: $validation-error-typography-color;
+  background-color: $validation-error-background-color;
+  border: 1px solid $validation-error-border-color;
