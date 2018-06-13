@@ -26,7 +26,10 @@ exports.config = {
     plugins: {
         babel: { presets: ['latest'] },
         nunjucks: {
-            pageTitle: 'The Pure Wind Coffee'
+            siteUrl: "purewind.alexsalomon.me",
+            siteImage: "images/home/home-mobile-01",
+            pageTitle: 'The Pure Wind Coffee',
+            siteDescription: "Pure Wind is a website for a fictional coffeehouse made by Alex Salomon.",
         },
         eslint: {
             config: {
