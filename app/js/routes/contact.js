@@ -24,13 +24,13 @@ export default {
                 data: $(e.target).serialize(),
                 success: function(response) {
                     if(response.status == "success") {
-                        alertify.success('Email sent successfully.');
+                        alertify.success('Email sent!');
                     }else{
-                        alertify.error('Oops, something went wrong. Please try again later.');
+                        alertify.error('Oops, something went wrong. Please, try again later.');
                     }
                 },
                 error: function () {
-                    alertify.error('Oops, something went wrong. Please try again later.');
+                    alertify.error('Oops, something went wrong. Please, try again later.');
                 },
                 complete: function () {
                     document.querySelector('.contact-form').reset();
