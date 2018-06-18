@@ -27,7 +27,7 @@ exports.config = {
         babel: { presets: ['latest'] },
         nunjucks: {
             siteUrl: "http://purewind.alexsalomon.me",
-            siteImage: "http://purewind.alexsalomon.me/images/home/home-mobile-01.jpg",
+            siteImage: "http://purewind.alexsalomon.me/images/purewind-facebook-front-image.jpg",
             pageTitle: 'The Pure Wind Coffee',
             siteDescription: "Pure Wind is a website for a fictional coffeehouse made by Alex Salomon.",
         },
