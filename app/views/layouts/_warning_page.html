@@ -1,0 +1,27 @@
+
+{% extends "layouts/_main_layout_no_footer.html" %}
+
+<!------------------- Layout Variables ------------------------->
+<!-- pageTitle is defined in brunch-config.js -->
+{% block pageTitle %}{{ pageTitle }} - {{ warningPageTitle }}{% endblock %}
+
+<!-- REQUIRED: to fire scripts for this page -->
+{% block bodyClass %}{{ warningBodyClass }}{% endblock %}
+<!-------------------------------------------------------------->
+
+{% block main %}
+  {% include "parts/_logo.html" %}
+  <img class="logo-border-down" src="borders/white-border-bottom-down.png">
+
+  <section class="warning">
+    <div class="warning__content">
+      <h1 class="warning__title">{{ warningTitle }}</h1>
+      <p class="warning__text">{{ warningText|safe }}</p>
+      <div class="warning__links" href="index.html">
+        <a class="warning__link warning__link--home" href="index.html">
+          <img class="warning__link__icon warning__link__icon--home" src="icons/icon-home.jpg">
+        </a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

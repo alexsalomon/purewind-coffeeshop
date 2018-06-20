@@ -12,16 +12,18 @@
 </head>
 <body class="{% block bodyClass %}{% endblock %}">
 
-  <main class="main">
-    {% include "parts/_header.html" %}
+<main class="main">
+  {% include "parts/_header.html" %}
 
-    {% block main %} {% endblock %}
+  {% block main %} {% endblock %}
 
-    {% include "parts/_footer.html" %}
-  </main>
+  {% if hasFooter == true %}
+  {% include "parts/_footer.html" %}
+  {% endif %}
+</main>
 
-  <script src="js/vendor.js"></script>
-  <script src="js/app.js"></script>
-  <script>require('js/initialize');</script>
+<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
+<script>require('js/initialize');</script>
 </body>
 </html>

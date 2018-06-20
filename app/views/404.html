@@ -1,27 +1,6 @@
+{% set warningTitle = '404' %}
+{% set warningText = 'Oops, sorry we can&#39;t find that page!' %}
+{% set warningPageTitle = 'Not Found' %}
+{% set warningBodyClass = '404' %}
 
-{% extends "layouts/_base.html" %}
-
-<!------------------- Layout Variables ------------------------->
-<!-- pageTitle is defined in brunch-config.js -->
-{% block pageTitle %}{{ pageTitle }} - 404 Not Found{% endblock %}
-
-<!-- REQUIRED: to fire scripts for this page -->
-{% block bodyClass %}404{% endblock %}
-<!-------------------------------------------------------------->
-
-{% block main %}
-  {% include "parts/_logo.html" %}
-  <img class="logo-border-down" src="borders/white-border-bottom-down.png">
-
-  <section class="not-found">
-    <div class="not-found__content">
-      <h1 class="not-found__title">404</h1>
-      <p class="not-found__text">Oops, sorry we can't find that page!</p>
-      <div class="not-found__links" href="index.html">
-        <a class="not-found__link not-found__link--home is-white" href="index.html">Back to Home</a>
-      </div>
-    </div>
-  </section>
-
-  <img class="not-found-border-down" src="borders/white-border-bottom-up.png">
-{% endblock %}
+{% extends "layouts/_warning_page.html" %}
