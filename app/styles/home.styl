@@ -79,6 +79,26 @@ bracketify(val)
     grid-column: third-col / span end;
     grid-row: 4 / span 1
 
+  .home-footer
+    display: flex
+
+  .restaurant-info
+    width: 32%
+    margin-top: -0.2em
+
+  .restaurant-info__content
+    margin-top: -0.5em
+
+  .restaurant-info__border
+    content: url("../borders/desktop/blue-border-top-70-percent-desktop.jpg")
+
+  .home-footer__image
+    width: 68%
+    height: 100%
+
+  footer
+    display: none
+
 /***********************************
  ************** Touch **************
  ***********************************/
@@ -127,5 +147,8 @@ bracketify(val)
   .restaurant-info__content
     margin: -10px 0 -10px 0
 
-  .restaurant-info__image
+  .home-footer__image
     content: url("../images/home/mobile/home-mobile-09.jpg")
+
+  .sm-icons-white
+    display: none
