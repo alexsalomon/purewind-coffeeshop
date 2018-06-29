@@ -1,47 +1,35 @@
+/***********************************
+ ************* Colors **************
+ ***********************************/
 $primary-color = #0085B3
 
-.branding
-  text-align: center
+/***********************************
+ ********* Media Queries ***********
+ ***********************************/
+$mobile-end = 768px
+$tablet-start = 769px
+$tablet-end = 1087px
+$desktop-start = 1088px
 
-.branding__logo
-  width: 80%
-  margin: 1.5rem 1rem 0.5rem 1rem
+bracketify(val)
+  unquote("[") + val + unquote("]")
 
+/***********************************
+ ************* Common **************
+ ***********************************/
 .highlights
   text-align: center
 
-.highlights__title
-  font-size: 1.5rem
+.highlight__title
   line-height: normal
   color: black
 
-.highlights__image--2
-  margin-top: 0.6em
-  margin-bottom: -0.3em
-
-.highlights__image--3
-  margin-top: 0.6em
-  margin-bottom: 0.3em
-
-.highlights__image--4
-  margin-top: 0.6em
-
-.highlights__image--6
-  margin-bottom: -0.4em
-
-.highlights__title--6
-  margin-bottom: 0.5em
-
-.restaurant-info__border
-  margin-bottom: -2.5em
-
-.restaurant-info
+.restaurant-info__content
   background-color: $primary-color
-  margin: -10px 0 -10px 0
   text-align: center
   color: white
 
-.restaurant-info__info-section
+.restaurant-info__section
   padding 1rem 1rem
 
 .restaurant-info__title
@@ -50,3 +38,97 @@ $primary-color = #0085B3
 .restaurant-info__text
   font-family: Corbel
   font-size: 1.3rem
+
+/***********************************
+ ************* Desktop *************
+ ***********************************/
+@media screen and (min-width: $desktop-start)
+  .branding__logo
+    position: absolute
+    top: 4%
+    right: 3%
+    width: 25%
+
+  .highlights
+    display: grid
+    grid-template-columns: bracketify(first-col) 1fr bracketify(second-col) 1fr bracketify(third-col) 1fr bracketify(end)
+    grid-column-gap: 3%
+    grid-row-gap: 1%
+
+  .highlight__item--1
+    grid-column: first-col / span end;
+    grid-row: 1 / span 1
+
+  .highlight__item--2
+    grid-column: first-col / span second-col;
+    grid-row: 2 / span 1
+
+  .highlight__item--5
+    grid-column: first-col / span second-col;
+    grid-row: 3 / span 1
+
+  .highlight__item--3
+    grid-column: second-col / span end;
+    grid-row: 2 / span 2
+
+  .highlight__item--4
+    grid-column: first-col / span third-col;
+    grid-row: 4 / span 1
+
+  .highlight__item--6
+    grid-column: third-col / span end;
+    grid-row: 4 / span 1
+
+/***********************************
+ ************** Touch **************
+ ***********************************/
+@media screen and (max-width: $tablet-end)
+  .branding
+    text-align: center
+
+  .branding__logo
+    content: url("../images/logos/logo-mobile.svg")
+    width: 80%
+    margin: 1.5rem 1rem 0.5rem 1rem
+
+  .branding__hero__image
+    display: none
+
+  .highlight__title
+    font-size: 1.5rem
+
+  .highlight__image--1
+    content: url("../images/home/mobile/home-mobile-01.jpg")
+
+  .highlight__image--2
+    content: url("../images/home/mobile/home-mobile-04.jpg")
+    margin-top: 0.6em
+    margin-bottom: -0.3em
+
+  .highlight__image--3
+    content: url("../images/home/mobile/home-mobile-05.jpg")
+    margin-top: 0.6em
+    margin-bottom: 0.3em
+
+  .highlight__image--4
+    content: url("../images/home/mobile/home-mobile-06.jpg")
+    margin-top: 0.6em
+
+  .highlight__image--5
+    content: url("../images/home/mobile/home-mobile-07.jpg")
+
+  .highlight__image--6
+    content: url("../images/home/mobile/home-mobile-08.jpg")
+    margin-bottom: -0.4em
+
+  .highlight__title--6
+    margin-bottom: 0.5em
+
+  .restaurant-info__border
+    margin-bottom: -2.5em
+
+  .restaurant-info__content
+    margin: -10px 0 -10px 0
+
+  .restaurant-info__image
+    content: url("../images/home/mobile/home-mobile-09.jpg")
