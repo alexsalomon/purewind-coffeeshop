@@ -1,8 +1,8 @@
 {
-  "name": "brunch-app",
-  "description": "Brunch.io application",
+  "name": "purewind-coffeeshop",
+  "description": "A fully responsible website made for a fictitious client.",
   "private": true,
-  "author": "Brunch",
+  "author": "Alex Salomon",
   "version": "0.0.1",
   "repository": "",
   "scripts": {
@@ -24,7 +24,7 @@
     "auto-reload-brunch": "^2",
     "babel-brunch": "~6.0",
     "babel-preset-latest": "^6",
-    "brunch": "^2",
+    "brunch": "^2.10.17",
     "clean-css-brunch": "^2",
     "eslint-brunch": "^3.12.0",
     "nunjucks-brunch": "github:brunch/nunjucks-brunch",
