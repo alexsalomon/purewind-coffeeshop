@@ -81,20 +81,29 @@ bracketify(val)
 
   .home-footer
     display: flex
+    margin-top: 4em
 
   .restaurant-info
     width: 32%
+    height: calc(80% - 0.9em)
     margin-top: -0.2em
 
   .restaurant-info__content
-    margin-top: -0.5em
+    display: grid
+    padding: 4em 0
+    width: calc(100% + 0.1em)
+    height: 100%
+    margin-top: -0.6em
 
   .restaurant-info__border
     content: url("../borders/desktop/blue-border-top-70-percent-desktop.jpg")
+    margin-top: 3px;
 
   .home-footer__image
-    width: 68%
-    height: 100%
+    width: 70%
+    height: 80%
+    object-fit: cover
+    object-position: 100% 0
 
   footer
     display: none
